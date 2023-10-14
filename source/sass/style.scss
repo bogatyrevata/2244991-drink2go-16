@@ -2,13 +2,15 @@
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
+@import "global/visually-hidden.scss";
 
 /* BLOCKS */
 @import "blocks/header";
 @import "blocks/body.scss";
 @import "blocks/logo.scss";
 @import "blocks/user.scss";
-@import "blocks/nav.scss";
+@import "blocks/nav-header.scss";
+@import "blocks/nav-footer.scss";
 @import "blocks/main.scss";
 @import "blocks/slider.scss";
 @import "blocks/benefits.scss";

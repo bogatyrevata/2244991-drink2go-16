@@ -1,10 +1,12 @@
-@use "./variables.scss";
+@use "./global/variables.scss";
 
 .user__list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
 .user__item {
   list-style: none;
+  padding: 20px;
 }

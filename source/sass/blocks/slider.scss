@@ -1,4 +1,4 @@
-@use "./variables.scss";
+@use "./global/variables.scss";
 
 .slider__list {
   margin: 0;
@@ -9,3 +9,82 @@
   list-style: none;
 }
 
+.slider__item--flat-white {
+  background-color: $color-flat-white;
+}
+
+.slider__item--lavender-latte {
+  background-color: $color-lavender-latte;
+}
+
+.slider__item--espresso {
+  background-color: $color-espresso;
+}
+
+.slider__badge {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-base-primary;
+  margin: 0;
+}
+
+.slider__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0;
+}
+
+.slider__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.slider__oldprise {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: line-through;
+  color: $color-base-primary;
+  margin: 0;
+}
+
+.slider__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.slider__button {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px 20px;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  text-decoration: none;
+  color: $color-base-white;
+  background-color: $color-base-primary;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.slider__buy {
+  display: flex;
+}

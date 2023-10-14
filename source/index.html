@@ -13,7 +13,7 @@
     <a class="logo" href="./index.html">
       <img class="logo-drink2go" width="" height="" src="" alt="logo">
     </a>
-    <h1>Интернет магазин кофейных напитков</h1>
+    <h1 class="header__title">Интернет магазин кофейных напитков</h1>
     <div class="user">
       <ul class="user__list">
         <li class="user__item">
@@ -28,22 +28,22 @@
         </li>
       </ul>
     </div>
-    <nav class="nav">
-      <button class="nav__toggle" type="button">
+    <nav class="nav-header">
+      <button class="nav-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="./index.html">Главная</a>
+      <ul class="nav-header__list">
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="./index.html">Главная</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Каталог</a>
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="#">Каталог</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Доставка</a>
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="#">Доставка</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="№">О нас</a>
+        <li class="nav-header__item">
+          <a class="nav-header__link" href="№">О нас</a>
         </li>
       </ul>
     </nav>
@@ -52,34 +52,42 @@
     <section class="slider">
       <h2 class="visually-hidden">Специальное предложение</h2>
       <ul class="slider__list">
-        <li class="slider__item">
+        <li class="slider__item slider__item--flat-white">
+          <img class="slider__image" src="#" width="280" height="280" alt="Декаф Флэт Уайт.">
           <p class="slider__badge">Новинка!</p>
           <h3 class="slider__title">Декаф Флэт Уайт</h3>
-          <img class="slider__image" src="#" width="280" height="280" alt="Декаф Флэт Уайт.">
           <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии
             с натуральным фермерским молоком — то, что нужно
             для расслабления после тяжёлого рабочего дня</p>
-          <p class="slider__oldprise">295p</p>
-          <p class="slider__price">225p</p>
-          <a class="slider__button" href="#">Заказать</a>
+          <div class="slider__buy">
+            <p class="slider__oldprise">295p</p>
+            <p class="slider__price">225p</p>
+            <a class="slider__button" href="#">Заказать</a>
+          </div>
         </li>
-        <li class="slider__item">
+        <li class="slider__item slider__item--lavender-latte">
+          <img class="slider__image" src="#" width="280" height="280" alt="Лавандовый Латте.">
           <p class="slider__badge">Новинка!</p>
           <h3 class="slider__title">Лавандовый Латте</h3>
-          <img class="slider__image" src="#" width="280" height="280" alt="Лавандовый Латте.">
-          <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину радужных гор</p>
-          <p class="slider__oldprise">285p</p>
-          <p class="slider__price">265p</p>
-          <a class="slider__button" href="#">Заказать</a>
+          <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+            лавандовым сиропом унесёт вас прямо на вершину радужных гор</p>
+          <div class="slider__buy">
+            <p class="slider__oldprise">285p</p>
+            <p class="slider__price">265p</p>
+            <a class="slider__button" href="#">Заказать</a>
+          </div>
         </li>
-        <li class="slider__item">
+        <li class="slider__item slider__item--espresso">
+          <img class="slider__image" src="#" width="280" height="280" alt="Тройной Эспрессо.">
           <p class="slider__badge">Новинка!</p>
           <h3 class="slider__title">Тройной Эспрессо</h3>
-          <img class="slider__image" src="#" width="280" height="280" alt="Тройной Эспрессо.">
-          <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-          <p class="slider__oldprise">395p</p>
-          <p class="slider__price">375p</p>
-          <a class="slider__button" href="#">Заказать</a>
+          <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+            Колумбии покажет вам, что такое настоящая бодрость</p>
+          <div class="slider__buy">
+            <p class="slider__oldprise">395p</p>
+            <p class="slider__price">375p</p>
+            <a class="slider__button" href="#">Заказать</a>
+          </div>
         </li>
       </ul>
       <button class="slider__arrow" type="button">
@@ -269,19 +277,19 @@
       <a class="social__link social__link--youtube" href="#">youtube</a>
     </div>
     <h2>Интернет магазин</h2>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Каталог</a>
+    <nav class="nav-footer">
+      <ul class="nav-footer__list">
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="#">Каталог</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Доставка</a>
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="#">Доставка</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Способы оплаты</a>
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="#">Способы оплаты</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="№">О нас</a>
+        <li class="nav-footer__item">
+          <a class="nav-footer__link" href="№">О нас</a>
         </li>
       </ul>
     </nav>
