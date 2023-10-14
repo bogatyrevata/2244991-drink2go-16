@@ -1,1 +1,15 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+@use "./variables.scss";
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Montserrat", "Arial", serif;
+  font-style: normal;
+  color: $color-base-black;
+}
+
+a {
+  text-decoration: none;
+}
+

@@ -1,0 +1,10 @@
+@use "./variables.scss";
+
+.card__list {
+  margin: 0;
+  padding: 0;
+}
+
+.card__item {
+  list-style: none;
+}

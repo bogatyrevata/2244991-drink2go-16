@@ -1,0 +1,10 @@
+@use "./variables.scss";
+
+.user__list {
+  margin: 0;
+  padding: 0;
+}
+
+.user__item {
+  list-style: none;
+}

@@ -1,0 +1,10 @@
+@use "./variables.scss";
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  list-style: none;
+}
