@@ -1,7 +1,22 @@
 @use "./global/variables.scss";
 
 .header {
-  background-color: $color-base-white;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .header__title {
@@ -9,10 +24,141 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
 
   @media (min-width: $desktop) {
     display: block;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    display: contents;
+  }
+}
+
+.header__logos {
+  padding: 11px 0 11px 20px;
+
+  @media (min-width: $mobile) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 11px 0;
+  }
+}
+
+.header--closed .nav-header__list {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.header--nojs .user__toggle {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.header--nojs .nav-header__list {
+  @media (max-width: $mobile) {
+    display: block;
+    position: relative;
+  }
+}
+
+.header--opened .user__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 2px;
+    background-color: $color-base-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $color-base-primary;
+  }
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: initial;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 20px;
+  text-align: center;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1.5px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: $color-base-black;
+    box-shadow: 0 5px 0 0 $color-base-black, 0 -5px 0 0 $color-base-black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1.5px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: $color-base-black;
+  }
+
+  &:hover::before {
+    box-shadow: 0 5px 0 0 $color-base-primary, 0 -5px 0 0 $color-base-primary;
+  }
+
+  &:hover::after {
+    background-color: $color-base-primary;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  &:active {
+    background-color: $color-base-secondary;
+
+    @media (min-width: $tablet) {
+      color: $color-base-primary;
+    }
   }
 }

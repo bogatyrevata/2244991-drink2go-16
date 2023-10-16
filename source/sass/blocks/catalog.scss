@@ -1,1 +1,52 @@
 @use "./global/variables.scss";
+
+.catalog {
+  background-color: $color-lightest-grey;
+  padding: 50px 20px 44px;
+
+  @media (min-width: $tablet) {
+    padding: 80px 20px 41px 19px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 98px 20px 41px 19px;
+  }
+}
+
+.catalog__badge {
+  margin: 0 0 6px;
+  text-align: center;
+  color: $color-base-primary;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+}
+
+.catalog__title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $tablet) {
+    margin: 30px 0 9px 0;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 30px 2px 9px 2px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 30px;
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
